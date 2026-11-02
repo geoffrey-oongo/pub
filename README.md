@@ -10,6 +10,7 @@ material belongs in this repo.
 | `authorized_keys` | All SSH public keys, ready to append to a server's `~/.ssh/authorized_keys` |
 | `ssh_ed25519.pub` | ed25519 key (`geoffreyoongo@gmail.com`) — preferred |
 | `ssh_rsa.pub` | older RSA key (`oongo@MacBookPro`) |
+| `ssh_rsa_windows.pub` | RSA key for the Windows PC (`geoffreyoongo@gmail.com`) |
 
 ## Install on a server
 
@@ -27,6 +28,12 @@ Only the ed25519 key:
 ```sh
 curl -fsSL https://raw.githubusercontent.com/geoffrey-oongo/pub/main/ssh_ed25519.pub \
   >> ~/.ssh/authorized_keys
+```
+
+Only the Windows PC key:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/geoffrey-oongo/pub/main/ssh_rsa_windows.pub \n  >> ~/.ssh/authorized_keys
 ```
 
 If you can still get in with a password, you can push from your laptop instead:
